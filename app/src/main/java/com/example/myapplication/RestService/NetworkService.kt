@@ -18,10 +18,7 @@ class NetworkService() {
     private var okHttpClient: OkHttpClient? = null
     private val BASE_URL = "https://api.openweathermap.org/data/2.5/"
 
-    //private val BASE_URL = "https://api.openweathermap.org/data/2.5/onecall"
-    //private val BASE_URL = "https://api.openweathermap.org/data/2.5/weather"
-    //private val BASE_URL = "https:// api.openweathermap.org/data/2.5/forecast"//?lat=35&lon=139&appid={API key}
-    val ACCESS_KEY = "40055cf8441131eaf6ba91e649852a56"
+    val ACCESS_KEY = "YOUR_KEY"
     /**
      * Method to build and return an OkHttpClient so we can set/get
      * headers quickly and efficiently.
@@ -38,6 +35,7 @@ class NetworkService() {
         val builder =
             Uri.parse(BASE_URL + endPoint)
                 .buildUpon()
+        queryParam?.set("appid", ACCESS_KEY)
         if (queryParam != null && !queryParam.isEmpty()) {
             for ((key, value) in queryParam.entries) {
                 builder.appendQueryParameter(key, value)

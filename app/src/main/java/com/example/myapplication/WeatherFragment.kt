@@ -43,7 +43,6 @@ class WeatherFragment : Fragment() {
         val params = HashMap<String, String>()
         params["lat"] = lat.toString()
         params["lon"] = lon.toString()
-        params["appid"] = "40055cf8441131eaf6ba91e649852a56"
         //var forcastDetail  : ForcastResponse ?= null
         NetworkService.instance.get("forecast", params) { error, response ->
             if (error == null) {
