@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_account_circle_24"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_centerVertical="true"
+        android:tint="@color/white"
+        tools:ignore="MissingConstraints" />
+
+</RelativeLayout>

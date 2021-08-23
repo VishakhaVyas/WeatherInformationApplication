@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Weather Info</string>
+    <string name="formatted_time">%02d:%02d</string>
+
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <string name="title_activity_maps">Map Current Location</string>
+
+    <string name="humidity">Humidity</string>
+</resources>
