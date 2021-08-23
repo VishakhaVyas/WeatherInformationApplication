@@ -1,19 +1,10 @@
 package com.example.myapplication
 
 import android.os.Bundle
-import android.util.Log
-import android.view.View
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-//import com.example.myapplication.model.ForcastDetail
-import com.example.myapplication.model.HistoryItem
-import com.example.myapplication.RestService.NetworkService
 import com.example.myapplication.model.CurrentWeatherResponse
-import com.google.gson.Gson
-import java.util.HashMap
 
 class HistoryActivity : AppCompatActivity() {
     //lateinit var database : WeatherDatabase
